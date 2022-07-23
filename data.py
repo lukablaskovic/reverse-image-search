@@ -2,8 +2,9 @@ import pandas as pd
 import cv2
 from towhee._types.image import Image
 
+source = 'D:/data/reverse_image_search.csv'
 #Read data
-df = pd.read_csv('D:/data/reverse_image_search.csv')
+df = pd.read_csv(source)
 print(df.head())
 #Data preparation
 id_img = df.set_index('id')['path'].to_dict()
