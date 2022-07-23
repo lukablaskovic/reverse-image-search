@@ -29,4 +29,6 @@ Mentor: **Goran Oreški** (https://fipu.unipu.hr/fipu/goran.oreski, goran.oreski
 
 ### Dependencies
 
-- to be added
+```python
+python -m pip install -q pymilvus towhee gradio opencv-python pillow
+```
