@@ -11,14 +11,11 @@ id_img = df.set_index('id')['path'].to_dict()
 label_ids = {}
 for label in set(df['label']):
     label_ids[label] = list(df[df['label']==label].id)
-#Helper functions
+    
+#Helper function
 def read_images(results):
     imgs = []
     for re in results:
         path = id_img[re.id]
         imgs.append(Image(cv2.imread(path), 'BGR'))
     return imgs
-
-def ground_truth(path):
-    label = path.split('/')[-2]
-    return label_ids[label]
