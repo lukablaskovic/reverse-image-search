@@ -14,7 +14,7 @@ def create_milvus_collection(collection_name, dim):
     schema = CollectionSchema(fields=fields, description='reverse image search')
     collection = Collection(name=collection_name, schema=schema)
 
-    # create IVF_FLAT index for collection.
+    # create IVF_FLAT index for collection
     index_params = {
         'metric_type':'L2',
         'index_type':"IVF_FLAT",
