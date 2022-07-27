@@ -10,7 +10,7 @@ print(df.head())
 
 id_img = df.set_index('id')['path'].to_dict()
     
-#Helper function - returns found images that match with test image
+#Helper function - returns found images that are similar to test image
 def read_images(results):
     imgs = []
     for re in results:
