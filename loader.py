@@ -10,7 +10,7 @@ dc = (
       .runas_op['id', 'id'](func=lambda x: int(x))
       #for each row from the data, read and decode the image at path and put the pixel data into column img
       .image_decode['path', 'img']()
-      #extract embedding feature with image_embedding.timm, an operator from the Towhee hub
+      #extract vector embedding features
       .image_embedding.timm['img', 'vec'](model_name='resnet50')
       #insert image embedding features in to Milvus
       .to_milvus['id', 'vec'](collection=collection, batch=100)
