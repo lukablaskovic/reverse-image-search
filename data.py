@@ -8,13 +8,9 @@ source = 'D:/data/reverse_image_search.csv'
 df = pd.read_csv(source)
 print(df.head())
 
-#Data preparation
 id_img = df.set_index('id')['path'].to_dict()
-label_ids = {}
-for label in set(df['label']):
-    label_ids[label] = list(df[df['label']==label].id)
     
-#Helper function
+#Helper function - returns found images that match with test image
 def read_images(results):
     imgs = []
     for re in results:
