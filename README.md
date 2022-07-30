@@ -32,3 +32,8 @@ Mentor: **Goran Oreški** (https://fipu.unipu.hr/fipu/goran.oreski, goran.oreski
 ```python
 ! python -m pip install -q pymilvus towhee gradio opencv-python pillow pyarrow
 ```
+### Dataset
+
+```
+curl -L https://github.com/towhee-io/examples/releases/download/data/reverse_image_search.zip -O
+```
