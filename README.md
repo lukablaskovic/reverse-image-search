@@ -21,7 +21,7 @@ Vector databases are used to store unstructured data such as images, videos, mus
 [Fakultet informatike u Puli](https://fipu.unipu.hr/)  
 Undergraduate thesis - Vector databases for unstructured data processing, 2021./2022.  
 Course: **Databases II**  
-Mentor: **Goran Oreški** (https://fipu.unipu.hr/fipu/goran.oreski, goran.oreski@unipu.hr)
+Mentor: **doc. dr. sc. Goran Oreški** (https://fipu.unipu.hr/fipu/goran.oreski, goran.oreski@unipu.hr)
 
 ### Dependencies
 
