@@ -2,10 +2,6 @@
 
 Reverse image search using Milvus.io and Towhee.io. Undergraduate thesis, Faculty of informatics in Pula.
 
-### Link to the application
-
-- to be added
-
 ### Author
 
 -   Luka Blašković (lblaskovi@unipu.hr)
